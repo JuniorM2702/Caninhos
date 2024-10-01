@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Caniños</title>
+</head>
+<link href="css/Perfil.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+<body>
+	<header>
+		<div class="navbar">
+		<img class="logo" src="imagenes/logo.png" alt="">
+		<p>Caninhos Fundation</p>
+		</div>	
+	</header>
+	<div class="banner">
+		<video autoplay loop muted plays-inline>
+			<source src="videos/video1.mp4" type="video/mp4">
+		</video>
+		<div class="profile-container">
+		<h2 class="title">Mi perfil</h2>    
+		<div class="profile-content">
+		<div class="avatar-section">
+		<img src="./imagenes/persona2.png" width="130px" alt="Profile Picture">
+		<div class="donations-info">
+		<p>Donación Total: <span class="amount">$0</span></p>
+		<a href="#" class="edit-button">Cambiar imagen</a>
+		</div>
+		</div>
+
+		<div class="navigation">
+		<button class="active" onclick="showProfile()">Perfil</button>
+		<button onclick="showSettings()">Configuración</button>
+		</div>
+		</div>
+
+		<div class="details-section">
+		<div id="profile" class="details active">
+		<h3>Detalles</h3>
+		<p>Información adicional y relevante acerca de tus donaciones</p>
+		</div>
+			<br>
+		<button type="button" class="save-button">Donar</button>
+
+
+			<div id="settings" class="details">
+    <h3>Configuración de cuenta</h3>
+    <form>
+        <div class="details-section">
+            <div class="form-column">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="fullName" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('fullName')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <div class="input-with-icon">
+                        <input type="email" id="email" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('email')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Celular</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="phone" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('phone')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Fecha de nacimiento</label>
+                    <div class="input-with-icon">
+                        <input type="date" id="dob" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('dob')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-column">
+                <div class="form-group">
+                    <label for="country">País</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="country" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('country')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="city" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('city')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="address" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('address')"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Código postal</label>
+                    <div class="input-with-icon">
+                        <input type="text" id="postalCode" readonly required>
+                        <i class="fas fa-edit edit-icon" onclick="editInput('postalCode')"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="save-button">Guardar cambios</button>
+            <button type="button" class="cancel-button">Cancelar</button>
+        </div>
+    </form>
+	</div>
+
+
+	</div>
+	</div>
+	</div>
+</body>
+<script src="js/perfil.js"></script>
+</html>
